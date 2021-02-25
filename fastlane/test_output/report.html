@@ -112,6 +112,8 @@
         <section id="counters">
           <h2 id="test-count"><span class="number">8</span> tests</h2>
           
+            <h2 id="fail-count"><span class="number">1</span> failures</h2>
+          
         </section>
         <section id="segment-bar">
           <a id="all-segment" onclick="selectSegment(this);" class="selected">All</a><a id="failing-segment" onclick="selectSegment(this);">Failing</a><a id="passing-segment" onclick="selectSegment(this);">Passing</a>
@@ -121,7 +123,7 @@
     <section id="test-suites">
       
         
-        <section class="test-suite passing" id="testCoverageTests.testCoverageTests">
+        <section class="test-suite failing" id="testCoverageTests.testCoverageTests">
           <section class="heading" onclick="toggleTests(this);">
             <h3 class="title">testCoverageTests.testCoverageTests</h3>
           </section>
@@ -165,7 +167,7 @@
               <tr class="test passing odd"  onclick="toggleDetails('testClass4');">
                 <td>
                   
-                    <h3 class="time">0.001s</h3>
+                    <h3 class="time">0.000s</h3>
                   
                 </td>
                 <td><h3 class="title">testClass4</h3></td>
@@ -187,7 +189,7 @@
               <tr class="test passing odd"  onclick="toggleDetails('testFailClass2');">
                 <td>
                   
-                    <h3 class="time">0.001s</h3>
+                    <h3 class="time">0.000s</h3>
                   
                 </td>
                 <td><h3 class="title">testFailClass2</h3></td>
@@ -198,7 +200,7 @@
               <tr class="test passing "  onclick="toggleDetails('testFailClass3');">
                 <td>
                   
-                    <h3 class="time">0.001s</h3>
+                    <h3 class="time">0.000s</h3>
                   
                 </td>
                 <td><h3 class="title">testFailClass3</h3></td>
@@ -206,14 +208,29 @@
               
             
               
-              <tr class="test passing odd"  onclick="toggleDetails('testFailClass4');">
+              <tr class="test failing odd"  onclick="toggleDetails('testFailClass4');">
                 <td>
-                  
-                    <h3 class="time">0.001s</h3>
                   
                 </td>
                 <td><h3 class="title">testFailClass4</h3></td>
               </tr>
+              
+                <tr class="details failing testFailClass4">
+                  <td></td>
+                  <td>
+                    
+                      <section class="test-detail reason">XCTAssertTrue failed - failing</section>
+                    
+                    
+                      <section class="test-detail snippet">    <span class="kd">func</span> <span class="nf">testFailClass4</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kt">XCTAssertTrue</span><span class="p">(</span><span class="kc">false</span><span class="p">,</span> <span class="s">"failing"</span><span class="p">)</span>
+    <span class="p">}</span>
+</section>
+                      <section class="test-detail">/Users/johnmejia/workspace/test_projects/testCoverage/testCoverageTests/testCoverageTests.swift:43</section>
+                    
+                    
+                  </td>
+                </tr>
               
             
             </table>

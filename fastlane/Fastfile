@@ -34,7 +34,7 @@ platform :ios do
 
     result = multi_scan(
       workspace: File.absolute_path('../testCoverage.xcworkspace'),
-      try_count: 3,
+      try_count: 1,
       fail_build: true,
       include_simulator_logs: false,
       scheme: 'testCoverage',

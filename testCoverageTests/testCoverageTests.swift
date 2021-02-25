@@ -38,8 +38,14 @@ class testCoverageTests: XCTestCase {
         TestFailClass().testFailFunc3()
     }
 
+    // This test will cause multi_scan to retry
     func testFailClass4() {
-        TestFailClass().testFailFunc4()
+        XCTAssertTrue(false, "failing")
     }
+
+    // This test will give us 100% for the TestClass.swift file
+//    func testFailClass4() {
+//        TestFailClass().testFailFunc4()
+//    }
 
 }
