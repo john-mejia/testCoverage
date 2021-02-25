@@ -19,7 +19,7 @@ This works as expected.
 
 Test 2 - `testFailClass4` and we allow 3 tries
 ==================
-This does not work as expected, because multi_scan should onlt care about the first run for coverage, I would expect the same results here as in Test 3
+This does not work as expected. Because multi_scan should only care about the first run for coverage, I would expect the same results here as in Test 3
 ![](test2.png)
 
 
