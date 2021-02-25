@@ -13,12 +13,18 @@ For all 3 runs, I am running the following 2 commands:
 
 Test 1 - All tests succeed on first try
 ==================
+This works as expected.
+![](test1.png)
 
 
 Test 2 - `testFailClass4` and we allow 3 tries
 ==================
+This does not work as expected, because multi_scan should onlt care about the first run for coverage, I would expect the same results here as in Test 3
+![](test2.png)
 
 
-Test 2 - `testFailClass4` and we allow 1 try
+Test 3 - `testFailClass4` and we allow 1 try
 ==================
+This works as expected, all functions show coverage except the one tested by the failing test.
+![](test3.png)
 
