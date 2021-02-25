@@ -10,24 +10,36 @@ import XCTest
 
 class testCoverageTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testClass1() {
+        TestClass().testFunc1()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testClass2() {
+        TestClass().testFunc2()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testClass3() {
+        TestClass().testFunc3()
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testClass4() {
+        TestClass().testFunc4()
+    }
+
+    func testFailClass1() {
+        TestFailClass().testFailFunc1()
+    }
+
+    func testFailClass2() {
+        TestFailClass().testFailFunc2()
+    }
+
+    func testFailClass3() {
+        TestFailClass().testFailFunc3()
+    }
+
+    func testFailClass4() {
+        TestFailClass().testFailFunc4()
     }
 
 }

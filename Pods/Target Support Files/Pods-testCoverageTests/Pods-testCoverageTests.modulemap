@@ -1,0 +1,6 @@
+framework module Pods_testCoverageTests {
+  umbrella header "Pods-testCoverageTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

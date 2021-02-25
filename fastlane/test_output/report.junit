@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='testCoverageTests.xctest' tests='8' failures='0'>
+  <testsuite name='testCoverageTests.testCoverageTests' tests='8' failures='0'>
+    <testcase classname='testCoverageTests.testCoverageTests' name='testClass1' time='0.003'/>
+    <testcase classname='testCoverageTests.testCoverageTests' name='testClass2' time='0.001'/>
+    <testcase classname='testCoverageTests.testCoverageTests' name='testClass3' time='0.001'/>
+    <testcase classname='testCoverageTests.testCoverageTests' name='testClass4' time='0.001'/>
+    <testcase classname='testCoverageTests.testCoverageTests' name='testFailClass1' time='0.000'/>
+    <testcase classname='testCoverageTests.testCoverageTests' name='testFailClass2' time='0.001'/>
+    <testcase classname='testCoverageTests.testCoverageTests' name='testFailClass3' time='0.001'/>
+    <testcase classname='testCoverageTests.testCoverageTests' name='testFailClass4' time='0.001'/>
+  </testsuite>
+</testsuites>
